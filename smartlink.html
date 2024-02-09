@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #download_btn{
+            text-decoration: none;
+            padding: 8px 16px;
+            background-color: #000;
+            color: #fff;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <a id="download_btn" href="https://play.google.com/store/apps/details?id=com.cleancloudapp.cleancloud&hl=en&gl=US&pli=1" rel="noopener noreferrer">Download Link</a>
+
+
+
+    <script>
+
+        let download_btn = document.getElementById('download_btn');
+
+        download_btn.addEventListener('click', function(){
+            const userAgent = navigator.userAgent;
+            
+            if(userAgent.match(/Android/i)){
+                download_btn.setAttribute('href', 'https://play.google.com/store/apps/details?id=com.cleancloudapp.cleancloud&hl=en&gl=US&pli=1')
+            }
+
+            else if(userAgent.match(/iPhone|iPad|iPod/i)){
+                download_btn.setAttribute('href', 'https://apps.apple.com/us/app/cleancloud/id1031182499')
+            }
+
+            else {
+                download_btn.setAttribute('href', 'https://play.google.com/store/apps/details?id=com.cleancloudapp.cleancloud&hl=en&gl=US&pli=1')
+            }
+        })
+
+      </script>
+</body>
+</html>

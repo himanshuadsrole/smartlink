@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+
+        .active{
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <script async
+    src="https://js.stripe.com/v3/buy-button.js">
+  </script>
+  
+  <stripe-buy-button
+    buy-button-id="buy_btn_1Ns9qrCkd4eTdkFBogO84N1z"
+    publishable-key="pk_live_51NhVfCCkd4eTdkFBsjmS6iNTxsHgyazBPRhJFh7k8ct3kPF0VixXjeUYaCt61nQrdlidmiY2uIibH7k6tCf4X53M00mqSQQyDX"
+  >
+  </stripe-buy-button>
+
+
+
+    <div class="elementor-toggle" role="tablist">
+        <div class="elementor-toggle-item">
+            <div id="elementor-tab-title-8181" class="elementor-tab-title" data-tab="1" role="tab"
+                aria-controls="elementor-tab-content-8181" aria-expanded="false" tabindex="-1" aria-selected="false">
+                <span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+                    <span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+                    <span class="elementor-toggle-icon-opened"><i
+                            class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+                </span>
+                <a href="" class="elementor-toggle-title">Our amit Firm</a>
+            </div>
+
+            <div id="elementor-tab-content-8181" class="elementor-tab-content elementor-clearfix" data-tab="1"
+                role="tabpanel" aria-labelledby="elementor-tab-title-8181" style="display: none;" hidden="hidden">
+                <p>The lawyers at George Lee Law Corp. speak fluent English, Chinese and Korean. Our unique
+                    understanding of multiple languages and cultures places us in an ideal position to maximize our
+                    clients’ chances of success in complicated legal proceedings. Our practice areas include family law,
+                    immigration law, civil litigation and criminal defence. Our lawyers also provide services in the
+                    following areas of law: conveyancing, buying and selling businesses, business incorporation, and
+                    wills drafting. In addition, we have acquired extensive experience and expertise in dealing with
+                    cross-nation litigation over the past two decades. Our firm has successfully served hundreds of
+                    local and international clients from Canada, China, Hong Kong, Taiwan and Korea.</p>
+                <p><a href="https://gleelaw.com/en/contact-us">Google map page on the site</a></p>
+            </div>
+        </div>
+        <div class="elementor-toggle-item">
+            <div id="elementor-tab-title-8182" class="elementor-tab-title" data-tab="2" role="tab"
+                aria-controls="elementor-tab-content-8182" aria-expanded="false">
+                <span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+                    <span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+                    <span class="elementor-toggle-icon-opened"><i
+                            class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+                </span>
+                <a href="" class="elementor-toggle-title">Our Philosophy</a>
+            </div>
+
+            <div id="elementor-tab-content-8182" class="elementor-tab-content elementor-clearfix" data-tab="2"
+                role="tabpanel" aria-labelledby="elementor-tab-title-8182">
+                <p>We are committed to delivering excellent legal services at a reasonable cost. Our philosophy is to
+                    utilize our best efforts to achieve optimal results for our clients. If it is possible, we will
+                    always advise our clients to avoid high-cost litigation. However, we will never waiver to fight in
+                    order to protect the rights and interests of our clients.</p>
+                <p>&nbsp;</p>
+                <p>Making sound judgment, adequate client preparation, and effective legal representation is our
+                    principal focus when we serve our clients.</p>
+            </div>
+        </div>
+        <div class="elementor-toggle-item">
+            <div id="elementor-tab-title-8183" class="elementor-tab-title" data-tab="3" role="tab"
+                aria-controls="elementor-tab-content-8183" aria-expanded="false">
+                <span class="elementor-toggle-icon elementor-toggle-icon-left" aria-hidden="true">
+                    <span class="elementor-toggle-icon-closed"><i class="fas fa-caret-right"></i></span>
+                    <span class="elementor-toggle-icon-opened"><i
+                            class="elementor-toggle-icon-opened fas fa-caret-up"></i></span>
+                </span>
+                <a href="" class="elementor-toggle-title">Our Approach</a>
+            </div>
+
+            <div id="elementor-tab-content-8183" class="elementor-tab-content elementor-clearfix" data-tab="3"
+                role="tabpanel" aria-labelledby="elementor-tab-title-8183">
+                <p>In the Art of War, Sun Tzu says, “The best victory is when the opponent surrenders of its own accord
+                    before there are any actual hostilities…It is best to win without fighting.”</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+var acc = document.getElementsByClassName("elementor-toggle-item");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var elementorToggleItem = this.nextElementSibling;
+    if (elementorToggleItem.style.display === "block") {
+      elementorToggleItem.style.display = "none";
+    } else {
+      elementorToggleItem.style.display = "block";
+    }
+  });
+}
+    </script>
+
+
+
+    <div class="number_section">
+        <div class="icon_box">
+            <span class="call">☏ </span>
+        </div>
+        <div class="number_box">
+            <a href="tel:+34 664 117 496" class="number">+34-664-117-496</a>
+            <a href="tel:+34-667-870-412" class="number">+34-667-870-412</a>
+        </div>
+    </div>
+</body>
+
+</html>

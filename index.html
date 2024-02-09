@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+   <h2>Hello world1</h2>
+   <h2>Hello world2</h2>
+   <h2>Hello world3</h2>
+   <h2>Hello world4</h2>
+   <h2>Hello world5</h2>
+   <h2>Hello world6</h2>
+
+   
+
+// document.querySelectorAll('h2').forEach( element => {
+//   //create new h1 element
+//   const newElement = document.createElement('h1');
+
+//   //set the inner html to the original h2 element 
+//   newElement.innerHTML = element.innerHTML;
+
+//   //take all attributes from original element and assign them to the new one
+//   Array.from(element.attributes).forEach( attr => {
+//     newElement.setAttribute(attr.nodeName, attr.nodeValue)
+//   })
+
+//   //replace the node in the dom
+//   element.parentNode.replaceChild(newElement, element);
+// })
+
+<script>
+let h2_tag = document.querySelector("h2");
+
+const newElement = document.createElement('h1');
+
+newElement.innerHTML = h2_tag.innerHTML;
+
+Array.from(h2_tag.attributes).forEach( attr => {
+    newElement.setAttribute(attr.nodeName, attr.nodeValue)
+  })
+
+  //replace the node in the dom
+  h2_tag.parentNode.replaceChild(newElement, h2_tag);
+
+
+
+
+//  Canonical tag 
+  var link = !!document.querySelector("link[rel='canonical']") ? document.querySelector("link[rel='canonical']") : document.createElement('link');
+  link.setAttribute('rel', 'canonical');
+  link.setAttribute('href', location.protocol + '//' + location.host + location.pathname);
+  document.head.appendChild(link);
+
+
+
+    </script>
+</body>
+</html>

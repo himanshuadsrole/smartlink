@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #myAnimation{
+            border: 2px solid red;
+            opacity: 0;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="myAnimation">
+        <h1>hello World</h1>
+    </div>
+
+
+
+    <script>
+
+        let myBox = document.getElementById('myAnimation');
+        window.addEventListener('load', function(){
+            setTimeout(()=>{    
+                myBox.style.opacity="1"                                                                     
+
+            },4000)
+        })
+
+    </script>
+</body>
+</html>

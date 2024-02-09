@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #box{
+            width: 30vw;
+            height: 20vh;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box">
+       <p>hello</p>
+    </div>
+
+    <input type="color" id="inputfield" oninput="bgchange()">
+
+
+    <script>
+
+        let input_btn = document.getElementById('inputfield');
+        let box = document.getElementById('box');
+
+        const bgchange = () =>{
+            box.style.backgroundColor = input_btn.value
+        }
+      
+
+    </script>
+</body>
+</html>

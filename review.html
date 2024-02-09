@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #review_box {
+            display: grid;
+            padding: 10px;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+        .inner_review_box {
+            box-shadow: 0px 0px 4px #cccccc;
+            padding: 10px 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: #253B6E;
+            border-radius: 10px;
+            text-decoration: none;
+        }
+
+        .inner_review_box:active {
+            text-decoration: none;
+        }
+
+        .review_heading_1 {
+            font-weight: 700;
+            letter-spacing: 1px;
+            line-height: 40px;
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 0;
+            font-family: 'Cabin', arial, sans-serif;
+        }
+
+        .reivew_heading_2 {
+            font-family: Cabin, arial, sans-serif;
+            color: #fff;
+            font-weight: 700;
+            letter-spacing: 1px;
+            line-height: 40px;
+        }
+
+        .review_star {
+            width: 100px;
+        }
+
+        .review_para {
+            font-family: Lato, arial, sans-serif;
+            color: rgb(213, 214, 220);
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: normal;
+        }
+
+        @media screen and (max-width:767px) {
+
+            #review_box {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+
+
+
+
+
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"LocalBusiness","name":"Granbury Appliance & Flooring Company","address":{"@type":"PostalAddress","addressCountry":"US","addressLocality":"Granbury","addressRegion":"TX","postalCode":"76049","streetAddress":"100 Corporate Drive"},"telephone":"(817) 579-7440","description":"Serving Hood County Since 2004\nWhether you're building a new home or merely remodeling a room or two, Granbury Appliance & Flooring Company is your Hood County headquarters for beautiful flooring and new appliances.\n\nWhen you visit our showroom, you'll see products from all the leading manufacturers.\n\nWith 14 years of doing business, we've established strong connections with some of the best material manufacturers, vendors, and local building companies.\nWe are a local, family-owned business. Our staff has tons of talent and experience, and we've built a reputation as of the area's leading go-to residential and builders' supplier. You'll see why we've earned compliments from your friends and neighbors.","email":"jshepherd@granburyflooring.com","url":"https://www.granburyflooring.com","geo":{"@type":"GeoCoordinates","latitude":32.4537184,"longitude":-97.7341591},"openingHours":["Mo 08:00-17:00","Tu 08:00-17:00","We 08:00-17:00","Th 08:00-17:00","Fr 08:00-17:00","Sa 09:00-12:00"],"logo":"https://s3.amazonaws.com/p.assets.lssdev.com/client_images/d/7/0/2/6/3608197/logo.jpg","photo":"https://s3.amazonaws.com/p.assets.lssdev.com/client_images/d/7/0/2/6/3608197/thumb_1.jpg","image":["https://s3.amazonaws.com/p.assets.lssdev.com/client_images/d/7/0/2/6/3608197/thumb_1.jpg","https://s3.amazonaws.com/p.assets.lssdev.com/client_images/d/7/0/2/6/3608197/thumb_2.jpg","https://s3.amazonaws.com/p.assets.lssdev.com/client_images/d/7/0/2/6/3608197/thumb_3.jpg","https://s3.amazonaws.com/p.assets.lssdev.com/client_images/d/7/0/2/6/3608197/thumb_4.jpg","https://s3.amazonaws.com/p.assets.lssdev.com/client_images/d/7/0/2/6/3608197/thumb_5.jpg","https://s3.amazonaws.com/p.assets.lssdev.com/client_images/d/7/0/2/6/3608197/thumb_6.jpg","https://s3.amazonaws.com/p.assets.lssdev.com/client_images/d/7/0/2/6/3608197/thumb_7.jpg","https://s3.amazonaws.com/p.assets.lssdev.com/client_images/d/7/0/2/6/3608197/thumb_8.jpg","https://s3.amazonaws.com/p.assets.lssdev.com/client_images/d/7/0/2/6/3608197/thumb_9.jpg","https://s3.amazonaws.com/p.assets.lssdev.com/client_images/d/7/0/2/6/3608197/thumb_10.jpg"]}</script>
+    <script
+        type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What do you know about my business?","acceptedAnswer":{"@type":"Answer","text":"Serving Hood County Since 2004\nWhether you're building a new home or merely remodeling a room or two, Granbury Appliance & Flooring Company is your Hood County headquarters for beautiful flooring and new appliances.\n\nWhen you visit our showroom, you'll see products from all the leading manufacturers.\n\nWith 14 years of doing business, we've established strong connections with some of the best material manufacturers, vendors, and local building companies.\nWe are a local, family-owned business. Our staff has tons of talent and experience, and we've built a reputation as of the area's leading go-to residential and builders' supplier. You'll see why we've earned compliments from your friends and neighbors."}},{"@type":"Question","name":"what products do you offer?","acceptedAnswer":{"@type":"Answer","text":"Appliances, Carpet, Wood Floors, Tile Floors, Rugs, and Flooring Materials"}},{"@type":"Question","name":"What are your hours?","acceptedAnswer":{"@type":"Answer","text":"Mo 08:00-17:00; Tu 08:00-17:00; We 08:00-17:00; Th 08:00-17:00; Fr 08:00-17:00; Sa 09:00-12:00"}},{"@type":"Question","name":"what is your business address?","acceptedAnswer":{"@type":"Answer","text":"100 Corporate Drive, Granbury, TX 76049, US"}},{"@type":"Question","name":"what payments do you accept?","acceptedAnswer":{"@type":"Answer","text":"Credit Card, Cash and Check"}},{"@type":"Question","name":"What is the phone number to a business?","acceptedAnswer":{"@type":"Answer","text":"(817) 579-7440"}}]}</script>
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <div id="review_box">
+        <a href="https://www.homecare.co.uk/homecare/agency.cfm/id/65432250678" target="_blank" rel="nofollow"
+            class="inner_review_box">
+            <div>
+                <h3 class="review_heading_1">Review from Glenys S (Daughter of Client) published on 15 August 2023</h3>
+                <h3 class="reivew_heading_2">Overall Experience &nbsp;<img
+                        src="https://www.homecare.co.uk/assets/images/ratings/Excellent.png" alt="review_star"
+                        class="review_star"></h3>
+                <p class="review_para">They are attentive to my father. Provide a professional care package. They go
+                    above and beyond with their thoughtfulness. My father enjoys having conversations, and they are
+                    happy to interact with him. I and the family feel involved and happy that he is being well cared
+                    for. We have had an unsatisfactory experience in the past with other carers, so it is a vastly
+                    improved service that they provide.</p>
+            </div>
+        </a>
+        <a href="https://www.homecare.co.uk/homecare/agency.cfm/id/65432250678" target="_blank" rel="nofollow"
+            class="inner_review_box">
+            <div>
+                <h3 class="review_heading_1">Review from A J (Ex Family Member) published on 15 August 2023</h3>
+                <h3 class="reivew_heading_2">Overall Experience &nbsp;<img
+                        src="https://www.homecare.co.uk/assets/images/ratings/Excellent.png" alt="review_star"
+                        class="review_star"></h3>
+                <p class="review_para">I am the service user’s ex, and we have been friends since we broke up 35 years
+                    ago. We have children and grandchildren between us. Unfortunately, my ex has been losing her memory
+                    over the past two years. I visit her weekly and sometimes twice weekly. Her moment-to-moment memory
+                    is now very poor, and her attitudes have coarsened, and she can be very difficult with her carers.
+                    <br>
+                    I am very impressed with the care she receives from the team, especially one member. They are very
+                    warm, caring, conscientious, trustworthy and prepared to go the extra mile in her interests. They
+                    are patient in dealing with difficulties, and they communicate well with our children, who assume
+                    the main overall responsibility for her care.
+                </p>
+            </div>
+        </a>
+        <a href="https://www.homecare.co.uk/homecare/agency.cfm/id/65432250678" target="_blank" rel="nofollow"
+            class="inner_review_box">
+            <div>
+                <h3 class="review_heading_1">Review from Joanne S (Daughter of Client) published on 9 August 2023</h3>
+                <h3 class="reivew_heading_2">Overall Experience &nbsp;<img
+                        src="https://www.homecare.co.uk/assets/images/ratings/Excellent.png" alt="review_star"
+                        class="review_star"></h3>
+                <p class="review_para">I cannot speak highly enough of the Innovations24 team. From the first contact, I
+                    knew they were the right fit for my parents, and they have been as caring, helpful and flexible as
+                    it is possible to be. I live a long distance from Leicester, and I have no idea how we'd have coped
+                    over the last few weeks without Innovations24 to rely on, as both parents have had significant
+                    changes in care needs in that time. My mum feels not only supported and safe with her carers, but
+                    that she is among friends who will talk and laugh with her. She is treated with dignity and respect,
+                    and as a person, not a job. It has been so reassuring for me knowing they're there for her when she
+                    needs them, they go above and beyond what's expected and I can't thank them enough.</p>
+            </div>
+        </a>
+        <a href="https://www.homecare.co.uk/homecare/agency.cfm/id/65432250678" target="_blank" rel="nofollow"
+            class="inner_review_box">
+            <div>
+                <h3 class="review_heading_1">Review from Christine S (Client) published on 8 August 2023</h3>
+                <h3 class="reivew_heading_2">Overall Experience &nbsp;<img
+                        src="https://www.homecare.co.uk/assets/images/ratings/Excellent.png" alt="review_star"
+                        class="review_star"></h3>
+                <p class="review_para">We have been having these carers since June and they are still with us. <br>
+                    They are so good that we cannot believe that we are so lucky. They make a plan as to what you
+                    require and nothing is too much trouble. They are so kind caring and friendly and helpful they show
+                    you respect and dignity in all tasks. <br>
+                    So pleased to have met such kind helpful people.</p>
+            </div>
+        </a>
+    </div>
+
+</body>
+
+</html>
